@@ -1,0 +1,18 @@
+Необходимо понять, приобрести знания, освежить их, а также получить практические знания по следующим темам:
+- ОС - 1 неделя
+	- THM - https://tryhackme.com/room/windowsfundamentals1xbx
+	- MS - https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/security-auditing-overview
+	- Linux - https://tryhackme.com/room/linuxfundamentalspart1
+- Сети - 1 неделя
+	- https://tryhackme.com/room/introtonetworking
+	- https://tryhackme.com/room/networkservices
+	- https://tryhackme.com/room/networkservices2
+- MITRE ATT&CK - 1,5 недели
+	- MITRE раздел - https://app.letsdefend.io/path/soc-analyst-learning-path
+- Splunk - 1 неделя
+	- Внутренняя документация L2
+- Incident Response - 1 неделя
+	- Внутренняя документация L2
+	- MITRE раздел - https://app.letsdefend.io/path/soc-analyst-learning-path
+- Регулярки - 3-4 дня
+	- https://regexone.com/
