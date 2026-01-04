@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5302d940635bc6fe",
+        "id": "4e39b586cb78487c",
         "type": "tabs",
         "children": [
           {
-            "id": "2714b6c078574f97",
+            "id": "367be83b2409c04c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practise/Next 6 month plan.md",
+                "file": "Practise/SIEM Training.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Next 6 month plan"
+              "title": "SIEM Training"
             }
           }
         ]
@@ -169,8 +169,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eecdaba04057cea2",
+  "active": "367be83b2409c04c",
   "lastOpenFiles": [
+    "Practise/Настройка стенда.md",
+    "Practise/SIEM Training.md",
+    "Practise/Next 6 month plan.md",
+    "Common vulnerabilities in WEB apps.md",
+    "SQLi.md",
+    "README.md",
+    "Настройка_стенда.md",
+    "Настройка.md",
+    "().md",
+    "Linux/Linux info.md",
+    "All of info.md",
+    "AppSec.md",
+    "DevSecOps or just DevOps.md",
+    "Docker.md",
+    "test",
+    "2026",
+    "Payloads examples.md",
+    "Utils.md",
+    "SSH.md",
     "Linux/Снимок экрана 2025-10-03 в 18.22.17.png",
     "Linux/Снимок экрана 2025-10-02 в 19.05.21.png",
     "Linux/Снимок экрана 2025-10-02 в 18.53.50.png",
@@ -181,19 +200,8 @@
     "Linux/Снимок экрана 2025-10-01 в 21.06.39.png",
     "Linux/photo_5397999925536620143_y.jpg",
     "Linux/photo_5397999925536620122_y.jpg",
-    "Linux/Linux info.md",
     "Linux",
-    "Practise/Next 6 month plan.md",
-    "Utils.md",
-    "Common vulnerabilities in WEB apps.md",
-    "AppSec.md",
-    "Docker.md",
-    "DevSecOps or just DevOps.md",
-    "All of info.md",
-    "SQLi.md",
-    "Payloads examples.md",
     "oletools и oleid.md",
-    "SSH.md",
     "Practise",
     "Untitled 1.md",
     "Untitled.canvas",
