@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practise/SIEM Training.md",
+                "file": "Practise/Собственные правила.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SIEM Training"
+              "title": "Собственные правила"
             }
           }
         ]
@@ -173,6 +173,8 @@
   "lastOpenFiles": [
     "Practise/Настройка стенда.md",
     "Practise/SIEM Training.md",
+    "Practise/Установка Sysmon на Windows.md",
+    "Practise/Собственные правила.md",
     "Practise/Next 6 month plan.md",
     "Common vulnerabilities in WEB apps.md",
     "SQLi.md",
