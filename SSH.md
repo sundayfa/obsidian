@@ -15,6 +15,11 @@ UsePAM yes
 # AuthenticationMethods publickey
 ```
 
+Рестарт:
+```
+sudo systemctl restart ssh
+```
+
 Далее прокидываем свой ключ:
 ```
 ssh-copy-id username@ip
@@ -23,6 +28,11 @@ ssh-copy-id username@ip
 ```
 PasswordAuthentication no
 PubkeyAuthentication yes
+```
+
+Рестарт:
+```
+sudo systemctl restart ssh
 ```
 
 Чтобы подключиться по SSH к серверу, нужно передать свой открытый ключ командой:
