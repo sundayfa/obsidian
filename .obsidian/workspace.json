@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practise/Собственные правила.md",
+                "file": "Practise/ELK/Установка ELK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Собственные правила"
+              "title": "Установка ELK"
             }
           }
         ]
@@ -171,11 +171,27 @@
   },
   "active": "367be83b2409c04c",
   "lastOpenFiles": [
-    "Practise/Настройка стенда.md",
-    "Practise/SIEM Training.md",
-    "Practise/Установка Sysmon на Windows.md",
-    "Practise/Собственные правила.md",
+    "SSH.md",
+    "Docker.md",
+    "All of info.md",
+    "Practise/ELK/Установка ELK.md",
+    "Practise/Wazuh/Установка Wazuh.md",
+    "Practise/Wazuh/ELK.md",
+    "Practise/Wazuh/Собственные правила.md",
     "Practise/Next 6 month plan.md",
+    "Practise/Установка Sysmon на Windows.md",
+    "Practise/SIEM Training.md",
+    "Users/sunday_fa/Desktop/obsidian/Practise/Wazuh.md",
+    "Users/sunday_fa/Desktop/obsidian/Practise/ELK.md",
+    "Practise/ELK",
+    "Practise/Настройка стенда.md",
+    "Users/sunday_fa/Desktop/obsidian/Practise",
+    "Users/sunday_fa/Desktop/obsidian",
+    "Users/sunday_fa/Desktop",
+    "Users/sunday_fa",
+    "Users",
+    "Wazuh.md",
+    "Practise/Wazuh",
     "Common vulnerabilities in WEB apps.md",
     "SQLi.md",
     "README.md",
@@ -183,15 +199,12 @@
     "Настройка.md",
     "().md",
     "Linux/Linux info.md",
-    "All of info.md",
     "AppSec.md",
     "DevSecOps or just DevOps.md",
-    "Docker.md",
     "test",
     "2026",
     "Payloads examples.md",
     "Utils.md",
-    "SSH.md",
     "Linux/Снимок экрана 2025-10-03 в 18.22.17.png",
     "Linux/Снимок экрана 2025-10-02 в 19.05.21.png",
     "Linux/Снимок экрана 2025-10-02 в 18.53.50.png",
@@ -204,9 +217,6 @@
     "Linux/photo_5397999925536620122_y.jpg",
     "Linux",
     "oletools и oleid.md",
-    "Practise",
-    "Untitled 1.md",
-    "Untitled.canvas",
-    "Welcome.md"
+    "Untitled.canvas"
   ]
 }

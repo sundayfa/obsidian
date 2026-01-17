@@ -1,129 +1,28 @@
-Файл конфигурации лежит в ```/etc/ssh/sshd_config```. В данном файле можно настроить политики подключения по SSH. Ниже пример конфига, который разрешает подключение только по публичному ключу:
+Файл конфигурации лежит в ```/etc/ssh/sshd_config```. В данном файле можно настроить политики подключения по SSH. Для первого входа на устройство, где установлен openssh-server нужно отредактировать представленные ниже строки:
+
 ```
-# Include drop-in configurations  
-Include /etc/ssh/sshd_config.d/*.conf  
-  
-# This is the sshd server system-wide configuration file. See  
-# sshd_config(5) for more information.  
-  
-# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/bin  
-  
-# The strategy used for options in the default sshd_config shipped with  
-# OpenSSH is to specify options with their default value where  
-# possible, but leave them commented. Uncommented options override the  
-# default value.  
-  
-Port 22  
-AddressFamily inet  
-ListenAddress your_eth 
-  
-#HostKey /etc/ssh/ssh_host_rsa_key  
-#HostKey /etc/ssh/ssh_host_ecdsa_key  
-#HostKey /etc/ssh/ssh_host_ed25519_key  
-  
-#Ciphers and keying  
-Ciphers [aes256-ctr,aes192-ctr,aes128-ctr,aes256-gcm@openssh.com](https://web.telegram.org/a/aes256-ctr,aes192-ctr,aes128-ctr,aes256-gcm@openssh.com),aes128-gcm@open>  
-MACs hmac-sha2-256,hmac-sha2-512,hmac-sha1  
-KexAlgorithms curve25519-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2>  
-  
-#Logging  
-#SyslogFacility AUTH  
-#LogLevel INFO  
-  
-#Authentication:  
-LoginGraceTime 2m  
-PermitRootLogin no  
-StrictModes yes  
-MaxAuthTries 6  
-MaxSessions 8  
-PubkeyAuthentication yes  
-AuthenticationMethods publickey  
-UsePAM no  
-  
-  
-# The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2  
-# but this is overridden so installations will only check .ssh/authorized_keys  
-#unauthorizedKeysFile   .ssh/authorized_keys  
-  
-#AuthorizedPrincipalsFile none  
-  
-#AuthorizedKeysCommand none  
-#AuthorizedKeysCommandUser nobody  
-  
-# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts  
-#HostbasedAuthentication no  
-# Change to yes if you don't trust ~/.ssh/known_hosts for  
-# HostbasedAuthentication  
-#IgnoreUserKnownHosts no  
-# Don't read the user's ~/.rhosts and ~/.shosts files  
-#IgnoreRhosts yes  
-  
-# To disable tunneled clear text passwords, change to "no" here!  
-PasswordAuthentication no  
-#PermitEmptyPasswords no  
-  
-  
-# Change to "no" to disable keyboard-interactive authentication. Depending on  
-# the system's configuration, this may involve passwords, challenge-response,  
-# one-time passwords or some combination of these and other methods.  
-#KbdInteractiveAuthentication yes  
-  
-# Kerberos options  
-#KerberosAuthentication no  
-#KerberosOrLocalPasswd yes  
-#KerberosTicketCleanup yes  
-#KerberosGetAFSToken no  
-  
-# GSSAPI options  
-#GSSAPIAuthentication no  
-#GSSAPICleanupCredentials yes  
-  
-# Set this to 'yes' to enable PAM authentication, account processing,  
-# and session processing. If this is enabled, PAM authentication will  
-# be allowed through the KbdInteractiveAuthentication and  
-# PasswordAuthentication. Depending on your PAM configuration,  
-# PAM authentication via KbdInteractiveAuthentication may bypass  
-# the setting of "PermitRootLogin prohibit-password".  
-# If you just want the PAM account and session checks to run without  
-# PAM authentication, then enable this but set PasswordAuthentication  
-# and KbdInteractiveAuthentication to 'no'.  
-#UsePAM no  
-  
-#AllowAgentForwarding yes  
-#AllowTcpForwarding yes  
-#GatewayPorts no  
-#X11Forwarding no  
-#X11DisplayOffset 10  
-#X11UseLocalhost yes  
-#PermitTTY yes  
-#PrintMotd yes  
-#PrintLastLog yes  
-#TCPKeepAlive yes  
-#PermitUserEnvironment no  
-#Compression delayed  
-#ClientAliveInterval 0  
-  
-#ClientAliveCountMax 3  
-#UseDNS no  
-#PidFile /run/[sshd.pid](https://web.telegram.org/a/sshd.pid)  
-#MaxStartups 10:30:100  
-#PermitTunnel no  
-#ChrootDirectory none  
-#VersionAddendum none  
-  
-  
-# no default banner path  
-#Banner none  
-  
-# override default of no subsystems  
-Subsystem sftp /usr/lib/ssh/sftp-server  
-  
-# Example of overriding settings on a per-user basis  
-#Match User anoncvs  
-# X11Forwarding no  
-# AllowTcpForwarding no  
-# PermitTTY no  
-# ForceCommand cvs server
+Port 22
+ListenAddress 0.0.0.0
+
+# Временно РАЗРЕШАЕМ вход по паролю
+PasswordAuthentication yes
+PubkeyAuthentication yes
+
+# Убедитесь, что PAM включен (нужен для паролей)
+UsePAM yes
+
+# Закомментируйте эту строку, если она есть, иначе пароль не сработает
+# AuthenticationMethods publickey
+```
+
+Далее прокидываем свой ключ:
+```
+ssh-copy-id username@ip
+```
+После его редактируем конфиг для входа только по ключам:
+```
+PasswordAuthentication no
+PubkeyAuthentication yes
 ```
 
 Чтобы подключиться по SSH к серверу, нужно передать свой открытый ключ командой:
