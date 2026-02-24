@@ -20,6 +20,14 @@ sudo docker run -d \
  sudo docker ps - статус должен быть  Up About an $time$ (healthy)
  curl -I http://localhost:8080 - можно дернуть его курлом
 ```
+Теперь нужно указать кибане, где ей искать интеграции:
+```
+sudo nano /etc/kibana/kibana.yml
+```
+В конец файла добавляем строчку:
+```
+xpack.fleet.registryUrl: "http://localhost:8080"
+```
 Далее перезапускаем:
 ```
  sudo systemctl restart kibana

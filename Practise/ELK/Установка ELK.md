@@ -44,9 +44,10 @@
     6.11 далее у нас потребую токен, для этого в терминале ВМ (Ubuntu) вводим: `/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana`  и копируем значение токена из терминала в форму  web-интерфеса Elasticsearch  
     6.12 после токена потребуется Verification code, для этого в терминале ВМ (Ubuntu) вводим: `sudo sudo /usr/share/kibana/bin/kibana-verification-code` и копируем значение кода из терминала в форму web-интерфеса Elasticsearch.
 
-Для установки Fleet Server необходимо перейти в Management -> Fleet -> нажать синюю кнопку `Add Fleet Server`, перейти в раздел Advanced. Если хост, который будет выполнять роль Fleet Server, тот же, где установлен ELK, то можно указать localhost, иначе адрес сервера, куда будем ставить Fleet Server. Далее генерируем токен. В пункте 5 указаны репозитории, которые недоступны в России, можно использовать [заркало](https://mirror.yandex.ru/mirrors/elastic/8/pool/main/e/elastic-agent/) и установить нужную версию. После чего выполнить команды:
+Для установки Fleet Server необходимо перейти в Management -> Fleet -> нажать синюю кнопку `Add Fleet Server`, перейти в раздел Advanced. Если хост, который будет выполнять роль Fleet Server, тот же, где установлен ELK, то можно указать localhost, иначе адрес сервера, куда будем ставить Fleet Server. Далее генерируем токен. 
+По итогу UI сформирует нам cmdline, который качает elastic-agent и заенроллит его с Kibana, однако URL в первой команде curl заблокированы, поэтому нужно подставить ссылку из [заркала](https://mirror.yandex.ru/mirrors/elastic/8/pool/main/e/elastic-agent/) и установить нужную версию отдельно. После чего выполнить команды:
 ```
-sudo dpkg -i elastic-agent-UR_VERSION.deb 
+sudo dpkg -i elastic-agent-INSTALLED_VERSION_FROM_MIRROR.deb 
 sudo systemctl enable elastic-agent 
 sudo systemctl start elastic-agent
 ```
