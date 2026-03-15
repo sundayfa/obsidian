@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practise/ELK/Политики агентов ELK. Интеграции.md",
+                "file": "Practise/Splunk/Установка Splunk.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Политики агентов ELK. Интеграции"
+              "title": "Установка Splunk"
             }
           }
         ],
@@ -186,8 +186,10 @@
   },
   "active": "2cf2bcfde0b4d4a8",
   "lastOpenFiles": [
-    "Practise/ELK/Установка ELK.md",
     "Practise/ELK/Политики агентов ELK. Интеграции.md",
+    "Practise/Splunk/Установка Splunk.md",
+    "Practise/Splunk",
+    "Practise/ELK/Установка ELK.md",
     "SSH.md",
     "Docker.md",
     "All of info.md",
@@ -220,7 +222,6 @@
     "test",
     "2026",
     "Payloads examples.md",
-    "Utils.md",
     "Linux/Снимок экрана 2025-10-03 в 18.22.17.png",
     "Linux/Снимок экрана 2025-10-02 в 19.05.21.png",
     "Linux/Снимок экрана 2025-10-02 в 18.53.50.png",
@@ -231,7 +232,6 @@
     "Linux/Снимок экрана 2025-10-01 в 21.06.39.png",
     "Linux/photo_5397999925536620143_y.jpg",
     "Linux/photo_5397999925536620122_y.jpg",
-    "Linux",
     "Untitled.canvas"
   ]
 }
