@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "4e39b586cb78487c",
+        "id": "4493ef8fee77d633",
         "type": "tabs",
         "children": [
           {
-            "id": "367be83b2409c04c",
+            "id": "cf8f3489191f3a7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practise/ELK/Установка ELK.md",
+                "file": "Attacks/Reconnaissance/Wordlist Scanning - T1595.003.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Установка ELK"
-            }
-          },
-          {
-            "id": "2cf2bcfde0b4d4a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practise/Splunk/Установка Splunk.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Установка Splunk"
+              "title": "Wordlist Scanning - T1595.003"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,44 +169,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2cf2bcfde0b4d4a8",
+  "active": "cf8f3489191f3a7f",
   "lastOpenFiles": [
-    "Practise/ELK/Политики агентов ELK. Интеграции.md",
-    "Practise/Splunk/Установка Splunk.md",
-    "Practise/Splunk",
-    "Practise/ELK/Установка ELK.md",
-    "SSH.md",
-    "Docker.md",
+    "Attacks/Reconnaissance/Active Scanning - T1595.001.md",
+    "Attacks/Reconnaissance/Wordlist Scanning - T1595.003.md",
+    "Attacks/Initial Access",
+    "Attacks/Reconnaissance",
+    "Untitled",
+    "Attacks",
+    "Users/sunday_fa/Desktop/obsidian/SOC.md",
     "All of info.md",
-    "Practise/Wazuh/Установка Wazuh.md",
-    "Practise/Wazuh/ELK.md",
-    "Practise/Wazuh/Собственные правила.md",
-    "Practise/Next 6 month plan.md",
-    "Practise/Установка Sysmon на Windows.md",
-    "Practise/SIEM Training.md",
-    "Users/sunday_fa/Desktop/obsidian/Practise/Wazuh.md",
-    "Users/sunday_fa/Desktop/obsidian/Practise/ELK.md",
-    "Practise/ELK",
-    "Practise/Настройка стенда.md",
-    "Users/sunday_fa/Desktop/obsidian/Practise",
     "Users/sunday_fa/Desktop/obsidian",
     "Users/sunday_fa/Desktop",
     "Users/sunday_fa",
     "Users",
+    "SOC.md",
+    "SOC/Practise/Next 6 month plan.md",
+    "SOC/Practise/ELK/Установка ELK.md",
+    "SOC",
+    "DevSecOps or just DevOps.md",
+    "SOC/Practise/ELK/Политики агентов ELK. Интеграции.md",
+    "SOC/Practise/Splunk/Установка Splunk.md",
+    "SOC/Practise/Splunk",
+    "SSH.md",
+    "Docker.md",
+    "SOC/Practise/Wazuh/Установка Wazuh.md",
+    "Practise/Wazuh/ELK.md",
+    "SOC/Practise/Wazuh/Собственные правила.md",
+    "SOC/Practise/Установка Sysmon на Windows.md",
+    "Practise/SIEM Training.md",
+    "Users/sunday_fa/Desktop/obsidian/Practise/Wazuh.md",
+    "Users/sunday_fa/Desktop/obsidian/Practise/ELK.md",
+    "SOC/Practise/Настройка стенда.md",
     "Wazuh.md",
-    "Practise/Wazuh",
     "Common vulnerabilities in WEB apps.md",
     "SQLi.md",
     "README.md",
     "Настройка_стенда.md",
     "Настройка.md",
-    "().md",
-    "Linux/Linux info.md",
-    "AppSec.md",
-    "DevSecOps or just DevOps.md",
-    "test",
-    "2026",
-    "Payloads examples.md",
     "Linux/Снимок экрана 2025-10-03 в 18.22.17.png",
     "Linux/Снимок экрана 2025-10-02 в 19.05.21.png",
     "Linux/Снимок экрана 2025-10-02 в 18.53.50.png",
