@@ -1,0 +1,26 @@
+```
+[ids]
+*
+
+[main]
+leftcontrol = layer(alt)
+leftalt = layer(meta)
+leftmeta = layer(control)
+rightalt = layer(altgr)
+rightmeta = layer(control)
+
+[control]
+left = home
+right = end
+up = C-home
+down = C-end
+backspace = C-S-backspace
+
+[meta]
+left = C-left
+right = C-right
+backspace = C-backspace
+
+[control+shift]
+s = sysrq
+```
